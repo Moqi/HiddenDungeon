@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fcacf5c6e8d7204e9c51e9ea4b453a0, type: 3}
+  m_Name: New AISystem.AIController
+  m_EditorClassIdentifier: 
+  states:
+  - {fileID: 11400002}
+  - {fileID: 11400004}
+  - {fileID: 11400006}
+  parameters: []
+  runtimeAnimatorController: {fileID: 9100000, guid: 5baef9cd409cffd40a8ed1b047071587,
+    type: 2}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46ffa838b096b844eae0b690be376f70, type: 3}
+  m_Name: AnyState
+  m_EditorClassIdentifier: 
+  position:
+    serializedVersion: 2
+    x: 411
+    y: 132
+    width: 150
+    height: 30
+  id: 46592410-bcc0-47ad-8235-9267e5c43e73
+  isDefaultState: 0
+  transitions: []
+  actions: []
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ba50ba2987c7545b10959603292f73, type: 3}
+  m_Name: Walk
+  m_EditorClassIdentifier: 
+  position:
+    serializedVersion: 2
+    x: 398
+    y: 207
+    width: 150
+    height: 30
+  id: 6f9621c1-39f6-46ac-917a-7d6013e8f86c
+  isDefaultState: 1
+  transitions: []
+  actions: []
+  speed: 2
+  rotation: 150
+  applyRootMotion: 0
+  range: 10
+  threshold: .100000001
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38f8edc712d25cf41a6eb662a3494038, type: 3}
+  m_Name: Simple
+  m_EditorClassIdentifier: 
+  position:
+    serializedVersion: 2
+    x: 175
+    y: 115
+    width: 150
+    height: 30
+  id: ad9b191f-3934-4dc7-a720-44e0b1ee2b40
+  isDefaultState: 0
+  transitions: []
+  actions: []
